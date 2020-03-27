@@ -52,7 +52,7 @@ class List extends React.Component {
                 <div className='editButtons'>
                     <button
                         onClick={this.moveBackward}>{'< '}Previous
-                 </button>
+                    </button>
                     <button
                         onClick={this.moveForward}>Next {' >'}
                     </button>

@@ -5,10 +5,10 @@ import List from './components/List'
 function App() {
   return (
     <div className='App'>
-      <h1 className='people'>
+      <h3 className='header'>
         Home
+      </h3>
         <List/>
-      </h1>
     </div>
   );
 }

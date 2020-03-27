@@ -1,4 +1,94 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.App {
+  text-align: left;
+}
+
+.header{
+  background-color: #34a5da;
+  display: flex;
+  height: 75px;
+  width: 100vw;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  padding: 25px;
+}
+
+.body{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.helpDisplay{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+
+  width: 80vw;
+}
+
+.whitebox{
+  background-color: white;
+  height: 50vh;
+  width: 80vw;
+  padding-left: 40px;
+ 
+}
+
+.editButtons{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-content: center;
+}
+
+button{
+  background-color: black;
+  color: white;
+  border: 0;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 130px;
+  padding-right: 130px;
+
+}
+
+.personName{
+  border-bottom:3px solid #8cc5e2;
+  width: auto;
+}
+
+.displayId{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 10px;
+  padding-top: 5px
+}
+
+.bold{
+  display: flex;
+  flex-direction: row;
+}
+
+.notBold{
+  font-weight: normal;
+}
+
+ol{
+  font-weight: 700;
+}
+
+li{
+  font-weight: normal;
+}

@@ -3,7 +3,7 @@ import people from './People'
 import Profileinfo from './Profileinfo'
 
 
-console.log(people)
+// console.log(people)
 class List extends React.Component {
     constructor() {
         super()
@@ -16,7 +16,8 @@ class List extends React.Component {
         this.moveBackward = this.moveBackward.bind(this)
     }
     moveForward() {
-        // console.log(this.state.currentIndex)
+        console.log(this.state.currentIndex)
+        console.log(this.state.currentPerson)
         if (this.state.currentIndex === 24) {
             this.setState({
                 currentPerson: this.state.people[this.state.people.length - 25],
@@ -29,6 +30,7 @@ class List extends React.Component {
             })
         }
     }
+
     moveBackward() {
         // console.log(this.state.currentIndex)
         if (this.state.currentIndex === 0) {
@@ -50,10 +52,15 @@ class List extends React.Component {
             <div className='body'>
                 <Profileinfo Hello={this.state.currentPerson} />
                 <div className='editButtons'>
-                    <button
+                    <button className='button'
                         onClick={this.moveBackward}>{'< '}Previous
                     </button>
-                    <button
+                    <div>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    <button>New</button>
+                    </div>
+                    <button className='button'
                         onClick={this.moveForward}>Next {' >'}
                     </button>
                 </div>

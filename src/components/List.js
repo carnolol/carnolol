@@ -19,7 +19,7 @@ class List extends React.Component {
         // console.log(this.state.currentIndex)
         if (this.state.currentIndex === 24) {
             this.setState({
-                currentPerson: this.state.people[this.state.people.length - 24],
+                currentPerson: this.state.people[this.state.people.length - 25],
                 currentIndex: this.state.people.length - 24
             })
         } else {
